@@ -1,0 +1,9 @@
+langchain
+langchain-google-genai
+streamlit
+python-dotenv
+pyPDF2
+python-dotenv
+grpcio
+
+-e .
