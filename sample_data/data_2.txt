@@ -1,0 +1,1 @@
+Machine learning (ML) is the science of developing statistical models and algorithms that computer systems use to perform tasks without explicit instructions. ML algorithms use patterns and inference to process large amounts of historical data and identify data patterns.
