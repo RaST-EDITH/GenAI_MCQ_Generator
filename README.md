@@ -1,41 +1,84 @@
 # MCQ Generator using Gen AI 🤖
 
-## Overview 📚
-This project leverages Generative AI to create a streamlined web application for generating multiple-choice questions (MCQs) based on textual inputs. With customizable features, users can easily generate, review, and refine MCQs to suit various educational and assessment needs.
+Welcome to the MCQ Generator project! This web application allows users to generate multiple-choice questions (MCQs) based on a given topic description. It utilizes Generative AI to create questions tailored to the specified complexity level and subject.
 
 ## Features ✨
-- **📁 File Upload**: Upload text files (.txt or .pdf) containing descriptions of your topic.
-- **🛠️ Customizable Input Fields**:
-  - **🔢 Number of Questions**: Specify the number of MCQs to generate.
-  - **📘 Subject Title**: Define the subject area for the generated questions.
-  - **⚙️ Complexity Level**: Set the difficulty level of the questions.
-- **⚡ Real-Time MCQ Generation**: Generate MCQs on the fly with a user-friendly interface.
-- **📝 Review and Refine**: Review the generated MCQs and make adjustments as needed.
 
-## Use Case 🎯
-This application is ideal for educators, trainers, and content creators who need to quickly generate quiz content. Whether you're preparing for a class, an online course, or an assessment, this tool provides a fast and efficient way to create high-quality questions.
+- **File Upload**: Users can upload a `.txt` or `.pdf` file containing the topic description.
+- **Dynamic Question Generation**: Specify the number of questions to generate.
+- **Customization Options**: Input fields for subject title and complexity level.
+- **User-Friendly Interface**: Built with Streamlit for an interactive experience.
+- **Error Handling**: Robust error handling to ensure smooth operation.
+- **Review Section**: Automatically generated review for the created MCQs.
 
-## How It Works 🛠️
-1. **Upload a File**: Start by uploading a text or PDF file that contains the content from which you want to generate MCQs.
-2. **Input Customization**: Fill in the required fields, including the number of questions, subject title, and complexity level.
-3. **Generate MCQs**: Click the "Generate MCQs" button to create a set of questions tailored to your inputs.
-4. **Review**: Examine the generated questions and the corresponding review to ensure they meet your standards.
+## Requirements 📦
 
-## Tech Stack 🖥️
-- **Streamlit**: For creating the web interface.
-- **Python**: Backend logic for reading files, generating MCQs, and processing responses.
-- **Pandas**: For handling tabular data.
+- Python 3.7+
+- Streamlit
+- Pandas
+- dotenv
+- Other dependencies defined in `requirements.txt`
 
-## Getting Started 🚀
-1. Clone the repository.
-2. Install the necessary dependencies using `pip install -r requirements.txt`.
-3. Run the application with `streamlit run app.py`.
-4. Upload your file, customize your inputs, and start generating MCQs!
+## Setup Instructions 🛠️
 
-## Future Enhancements 🔮
-- **Advanced NLP Features**: Improve question generation using more sophisticated NLP techniques.
-- **User Authentication**: Add a login feature to save and manage generated MCQs.
-- **Export Options**: Allow users to export MCQs in different formats (e.g., PDF, CSV).
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/RaST-EDITH/GenAI_MCQ_Generator.git
+   cd GenAI_MCQ_Generator
+   ```
+
+2. **Create a Virtual Environment** (optional but recommended):
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install Required Packages**:
+
+   Make sure you have a `requirements.txt` file in your project directory. If it’s missing, you can create it with the required libraries.
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Set Up Environment Variables**:
+
+   Create a `.env` file in the root directory and add your environment variables there.
+
+5. **Run the Application**:
+
+   Start the Streamlit application by running:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+   This will launch the web app in your default browser.
+
+## Directory Structure 📁
+
+```
+mcq-generator/
+│
+├── src/
+│   ├── mcqgenerator/
+│   │   ├── utils.py
+│   │   ├── logger.py
+│   │   └── MCQGen.py
+│
+├── Response.json
+├── app.py
+├── requirements.txt
+└── .env
+```
+
+## Example Usage 📝
+
+1. Upload a file containing the topic description.
+2. Specify the number of questions, subject, and complexity level.
+3. Click "Generate MCQs" to see the generated questions and review.
 
 ## 📎 Contact
 
